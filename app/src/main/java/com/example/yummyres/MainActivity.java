@@ -71,16 +71,11 @@ public class MainActivity extends AppCompatActivity {
     int order =3;
     String searchName="";
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         resList = findViewById(R.id.myRes);
-
-
 
         //<---SearchButton--->
         searchText = (TextInputEditText) findViewById(R.id.searchString);
@@ -184,8 +179,6 @@ public class MainActivity extends AppCompatActivity {
             call = apiService.getDataFromName("bf067949c8390ff7", lat, lng,range,count,order,searchName,"json");
         }
 
-
-
         call.enqueue(new Callback<Data>() {
 
             @Override
@@ -223,8 +216,6 @@ public class MainActivity extends AppCompatActivity {
                 ProgramAdapter programAdapter = new ProgramAdapter(MainActivity.this, shopList);
 
                 resList.setAdapter(programAdapter);
-
-
                 resList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
                     public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
@@ -232,7 +223,6 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(MainActivity.this, detail1.class);
                         intent.putExtra("currentShop",currentShop);
                         Log.d("click","currentShop:"+currentShop);
-
                         startActivity(intent);
                     }
                 });
@@ -244,13 +234,9 @@ public class MainActivity extends AppCompatActivity {
                 button.setText(t.getMessage());
                 Log.d("Fail", "onFailure: "+t.getMessage());
             }
-
         });
-
-
         //<retrofitAPI/>
     }
-
 //<googleMap>
     private void getCurrentLoaction() {
         //Initialize task location
@@ -268,7 +254,6 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-
         Task<Location> task = client.getLastLocation();
         task.addOnSuccessListener(this,new OnSuccessListener<Location>() {
             @Override
@@ -281,8 +266,6 @@ public class MainActivity extends AppCompatActivity {
                     Log.w("order", "lat:"+lat+"\nlng:"+lng);
                     //after get the Lat Lng
                     getApi();
-
-
                     //Sync map
                     supportMapFragment.getMapAsync(new OnMapReadyCallback(){
                         @Override

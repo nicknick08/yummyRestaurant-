@@ -17,7 +17,7 @@ public class detail1 extends AppCompatActivity {
 
     private ImageView img;
 
-    private TextView tName, tAddress;
+    private TextView tName, tAddress,tOpenTime;
 
 
     @Override
@@ -29,11 +29,13 @@ public class detail1 extends AppCompatActivity {
         tAddress = (TextView) findViewById(R.id.address);
         img = (ImageView) findViewById(R.id.image);
         Shop shop = getIntent().getParcelableExtra("currentShop");
-        tName.setText(shop.getName());
-        tAddress.setText(shop.getAddress());
+        tName.setText("店名："+shop.getName());
+        tAddress.setText("住所："+shop.getAddress());
         Picasso.get()
                 .load(shop.photo.mobile.getL())
                 .into(img);
+        tOpenTime = findViewById(R.id.open);
+        tOpenTime.setText("営業時間：\n"+shop.getOpen());
 
 
     }
