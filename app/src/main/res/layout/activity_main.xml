@@ -10,18 +10,17 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.05"
-        android:orientation="horizontal">
-        <com.google.android.material.textfield.TextInputLayout
 
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.9">
-
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/searchString"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:hint="店名"
                 android:inputType="text"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -33,6 +32,47 @@
             android:layout_height="match_parent"
             android:layout_weight="0.15"
             android:text="->" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="300m"
+            android:layout_gravity="start"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="500m"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1000m"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2000m"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="3000m"
+            android:gravity="right"
+            android:layout_weight="1"/>
 
 
     </LinearLayout>
