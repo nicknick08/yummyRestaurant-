@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/derek Fukuyama/Documents/android/yummyRes/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/derek Fukuyama/Documents/android/yummyRes/app/src/main/res/layout/activity_detail1.xml" value="0.33" />
+        <entry key="..\:/derek Fukuyama/Documents/android/yummyRes/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/derek Fukuyama/Documents/android/yummyRes/app/src/main/res/layout/detail.xml" value="0.2477355072463768" />
+        <entry key="..\:/derek Fukuyama/Documents/android/yummyRes/app/src/main/res/layout/layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/derek Fukuyama/Documents/android/yummyRes/app/src/main/res/layout/singe_item.xml" value="0.1" />
         <entry key="..\:/derek Fukuyama/Documents/android/yummyRes/app/src/main/res/xml/searchable.xml" value="0.1875" />
       </map>
     </option>
